@@ -20,6 +20,7 @@ class ProductsSeeder extends Seeder
             'harga' => 14500,
             'stok' => 10,
             'kota_id' => 1,
+            'depot_id' => 1,
             'gambar' => 'galonSurga.png',
             'deskripsi' => 'Galon 5 Liter yang tersedia di Depot Surga',
         ]);
@@ -28,6 +29,7 @@ class ProductsSeeder extends Seeder
             'harga' => 15000,
             'stok' => 20,
             'kota_id' => 2,
+            'depot_id' => 2,
             'gambar' => 'galonRahmat.png',
             'deskripsi' => 'Galon 5 Liter yang tersedia di Depot Rahmat',
         ]);
@@ -36,6 +38,7 @@ class ProductsSeeder extends Seeder
             'harga' => 14500,
             'stok' => 30,
             'kota_id' => 3,
+            'depot_id' => 3,
             'gambar' => 'galonSuci.png',
             'deskripsi' => 'Galon 5 Liter yang tersedia di Depot Suci',
         ]);
@@ -44,6 +47,7 @@ class ProductsSeeder extends Seeder
             'harga' => 5000000,
             'stok' => 30,
             'kota_id' => 3,
+            'depot_id' => 4,
             'gambar' => 'galonSupreme.png',
             'deskripsi' => 'Galon Hypebeast harga mahal bgt',
         ]);
@@ -52,6 +56,7 @@ class ProductsSeeder extends Seeder
             'harga' => 100000000,
             'stok' => 30,
             'kota_id' => 3,
+            'depot_id' => 5,
             'gambar' => 'galonDior.png',
             'deskripsi' => 'Galon 5 Liter yang tersedia di Depot Suci',
         ]);
