@@ -35,7 +35,23 @@ h6 {
 
 
 
-Resources
+.banner img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.banner-join img{
+    width: 70%;
+    border-radius: 15px;
+}
+
+.product-img {
+    background-color: #E1E1E1;
+}
+
+.ready {
+    color: #4c9d3b;
+}
 
 /* Path: public/css/custom.css */
 

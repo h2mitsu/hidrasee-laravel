@@ -82,19 +82,14 @@
     </section>
     {{-- End Cards --}}
 
-    {{-- cards 2 --}}
-    <section class="box mt-4 mb-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+    {{-- banner --}}
+    <a name="anchor" id="anchor">
+        <div class="banner">
+            <img src="{{ url('assets/about.png') }}" alt="">
         </div>
-    </section>
+    </a>
+    {{-- end banner --}}
+
 
 
 </div>
