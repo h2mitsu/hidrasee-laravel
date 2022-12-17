@@ -3,7 +3,7 @@
         <div class="banner">
             <div class="col">
                 <div class="row">
-                    <img src="{{ url('assets/joinus.png') }}" alt="">
+                    <img src="{{ url('assets/joinus/joinus.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
             <a href="{{ route('under-construction') }}" class="text-decoration-none">
                 <div class="card shadow card-fx">
                     <div class="card-body text-center">
-                        <img src="" class="img-fluid pt-2 pb-2 mb-3">
+                        <img src="assets/joinus/depot.png" class="img-fluid pt-2 pb-2 mb-3">
                         <h4>As a Depot</h4>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
             <a href="{{ route('under-construction') }}" class="text-decoration-none">
                 <div class="card shadow card-fx">
                     <div class="card-body text-center">
-                        <img src="" class="img-fluid pt-2 pb-2 mb-3">
+                        <img src="assets/joinus/rider.png" class="img-fluid pt-2 pb-2 mb-3" style="height: 155px">
                         <h4>As a Rider</h4>
                     </div>
                 </div>
