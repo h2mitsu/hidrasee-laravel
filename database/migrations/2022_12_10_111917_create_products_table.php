@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('gambar');
             $table->integer('ongkir')->default(10000);
             $table->string('deskripsi');
-            $table->foreignId('kota_id')->constrained('kotas');
+            $table->string('kota_id');
         });
     }
 

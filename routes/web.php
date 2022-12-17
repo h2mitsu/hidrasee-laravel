@@ -18,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::livewire('/','home')->name('home');
+Route::livewire('/product','product-index')->name('product');
+Route::livewire('/product/{id}','product-details')->name('products.detail');
+Route::livewire('/under-construction','under-construction')->name('under-construction');
+Route::livewire('/faq','faq')->name('faq');
+Route::livewire('/about','about')->name('about');
+Route::livewire('/products/city/{kotaid}','products-city')->name('products.city');
+

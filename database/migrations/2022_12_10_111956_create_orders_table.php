@@ -19,8 +19,8 @@ class CreateOrdersTable extends Migration
             $table->string('kode_order');
             $table->string('status') ->default(0);
             $table->integer('total_harga');
-            $table->integer('kode unik');
-            $table->foreignId('user_id')->constrained('users');
+            $table->integer('kode_unik');
+            $table->integer('user_id');
         });
     }
 

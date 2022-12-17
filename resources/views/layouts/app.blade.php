@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Hidrasee</title>
+    <link rel="icon" href="/assets/logo.png" type="image/png">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -32,7 +33,9 @@
 
         <main class="py-4">
             @yield('content')
+
         </main>
+        @include('layouts.footer')
     </div>
 </body>
 </html>

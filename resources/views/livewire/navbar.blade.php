@@ -3,10 +3,16 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                <div><img src="/assets/logo.png" style="height: 25px;" class="pb-1 pe-2"></div>
-                <div class="pl-5">Hidrasee</div>
+                <div><img src="/assets/logo.png" style="height: 55px;" class="pe-2 mt-1"></div>
+                <span class="row">
+                    <div class="pl-5 fs-3"><strong>HIDRASEE</strong></div>
+                    <div class="fs-6">one stop water solution</div>
+                    </span>
+
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -16,8 +22,32 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Home</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-item">
+                            <a class="nav-link" href="">Join Us</a>
+                        </a>
+                    </li>
+
+                    {{-- drop down --}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Cities List
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @foreach ($kotas as $kota)
+                                <li><a class="dropdown-item" href="{{ route('products.city',$kota->id) }}">{{ $kota->nama_kota }}</a></li>
+                            @endforeach
+                        </ul>
 
                 </ul>
+
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
@@ -36,9 +66,11 @@
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
+
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"

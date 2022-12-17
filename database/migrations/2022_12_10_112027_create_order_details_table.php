@@ -18,8 +18,10 @@ class CreateOrderDetailsTable extends Migration
             $table->timestamps();
             $table->integer('jumlah_order');
             $table->integer('total_harga');
-            $table->foreignId('order_id')->constrained('orders');
-            $table->foreignId('product_id')->constrained('products');
+            $table->string('nama')->nullable();
+            $table->string('nomor')->nullable();
+            $table->integer('product_id');
+            $table->integer('order_id');
         });
     }
 
