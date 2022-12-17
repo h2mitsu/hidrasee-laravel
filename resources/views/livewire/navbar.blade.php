@@ -38,11 +38,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Cities List
+                            Depots List
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            @foreach ($kotas as $kota)
-                                <li><a class="dropdown-item" href="{{ route('products.city',$kota->id) }}">{{ $kota->nama_kota }}</a></li>
+                            @foreach ($depots as $depot)
+                                <li><a class="dropdown-item" href="{{ route('products.depot',$depot->id) }}">{{ $depot->nama_depot }}</a></li>
                             @endforeach
                         </ul>
 
