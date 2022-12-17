@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->integer('harga')->default(25000);
             $table->integer('stok');
             $table->boolean('is_ready')->default(true);
+            $table->string('depot_id');
             $table->string('gambar');
             $table->integer('ongkir')->default(10000);
             $table->string('deskripsi');
