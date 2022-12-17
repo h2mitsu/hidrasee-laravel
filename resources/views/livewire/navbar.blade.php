@@ -24,7 +24,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
+                            <a class="nav-link" href="./#anchor">About Us</a>
                         </a>
                     </li>
 
