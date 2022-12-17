@@ -14,7 +14,6 @@ class KotasSeeder extends Seeder
      */
     public function run()
     {
-        //
         DB::table('kotas')->insert([
             'nama_kota' => 'Yogyakarta',
         ]);
