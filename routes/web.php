@@ -25,4 +25,5 @@ Route::livewire('/faq','faq')->name('faq');
 Route::livewire('/about','about')->name('about');
 Route::livewire('/products/city/{kotaid}','products-city')->name('products.city');
 Route::livewire('/products/depot/{depotid}','products-depot')->name('products.depot');
+Route::livewire('/joinus','join-us')->name('joinus');
 

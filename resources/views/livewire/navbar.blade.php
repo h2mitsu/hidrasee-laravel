@@ -30,7 +30,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-item">
-                            <a class="nav-link" href="">Join Us</a>
+                            <a class="nav-link" href="{{ route('joinus') }}">Join Us</a>
                         </a>
                     </li>
 
