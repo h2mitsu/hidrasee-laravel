@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('kode_order');
+            $table->string('kode_order')->nullable();
             $table->string('status') ->default(0);
             $table->integer('total_harga');
             $table->integer('kode_unik');

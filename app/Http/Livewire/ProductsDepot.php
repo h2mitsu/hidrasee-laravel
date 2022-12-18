@@ -12,9 +12,10 @@ class ProductsDepot extends Component
 {
     use WithPagination;
 
-    public $search, $depot;
+    public $search, $depot, $title;
 
     protected $updatesQueryString = ['search'];
+
 
     public function updatingSearch()
     {
