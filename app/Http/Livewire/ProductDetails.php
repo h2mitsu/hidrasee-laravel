@@ -40,8 +40,32 @@ class ProductDetails extends Component
 
         //if order is empty, create new order
         if(empty($order)){
+            Order::create([
+                'user_id' => Auth::user()->id,
+                'total_harga' => $total_harga,
+                'status' => 0,
+                'kode_unik' => mt_rand(100,999)
+            ]);
 
+            $order = Order::where('user_id', Auth::user()->id)->where('status', 0)->first();
+            $order->kode_order = 'HD-'.$order->id;
+            $order->update();
+        } else {
+            //if order is not empty, update total harga
+            $order->total_harga = $order->total_harga + $total_harga;
+            $order->update();
         }
+
+        OrderDetails::create([
+            'product_id' => $this->product->id,
+            'order_id' => $order->id,
+            'jumlah_order' => $this->jumlah_pesanan,
+            'total_harga' => $total_harga
+        ]);
+
+        session()->flash('message', 'Produk berhasil ditambahkan ke keranjang');
+        return redirect()->back();
+
 
     }
 
