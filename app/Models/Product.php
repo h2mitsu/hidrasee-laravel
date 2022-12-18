@@ -13,4 +13,7 @@ class Product extends Model
     public function depot(){
         return $this->belongsTo(Depot::class, 'depot_id', 'id');
     }
+    public function order_details() {
+        return $this->hasMany(OrderDetail::class, 'product_id', 'id');
+    }
 }

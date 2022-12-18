@@ -11,4 +11,7 @@ class Kota extends Model
 
         return $this->hasMany(Product::class, 'kota_id', 'id');
     }
+
+
+
 }

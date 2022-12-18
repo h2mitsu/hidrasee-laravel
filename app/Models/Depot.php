@@ -11,4 +11,6 @@ class Depot extends Model
 
         return $this->hasMany(Product::class, 'depot_id', 'id');
     }
+
+
 }
