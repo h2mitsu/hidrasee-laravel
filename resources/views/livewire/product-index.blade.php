@@ -40,12 +40,16 @@
                                 <div class="col-md-12">
                                     <h5><strong>{{ $product->nama_produk }}</strong></h5>
                                     <h5>Rp. {{ number_format($product->harga) }}</h5>
-                                    @if ($product->kota_id == 1)
-                                        <h6>YOGYAKARTA</h6>
-                                    @elseif ($product->kota_id == 2)
-                                        <h6>SLEMAN</h6>
-                                    @elseif ($product->kota_id == 3)
-                                        <h6>BANTUL</h6>
+                                    @if ($product->depot_id == 1)
+                                        <h6>Depot Surga</h6>
+                                    @elseif ($product->depot_id == 2)
+                                        <h6>Depot Rahmat</h6>
+                                    @elseif ($product->depot_id == 3)
+                                        <h6>Depot Suci</h6>
+                                    @elseif ($product->depot_id == 4)
+                                        <h6>Supreme</h6>
+                                    @elseif ($product->depot_id == 5)
+                                        <h6>Dior</h6>
                                     @endif
                                 </div>
                             </div>
