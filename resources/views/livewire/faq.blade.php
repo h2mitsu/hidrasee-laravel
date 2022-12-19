@@ -11,7 +11,11 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                       Hidrasee is life
+                        HIDRASEE is a web-based application where customers can find the
+                        nearest water depot to ease their need of hydration. Users can also
+                        order products directly from our app and the products will either be
+                        delivered by the depot or HIDRASEE Delivery, or can be self-picked up
+                        by customers themselves.
                     </div>
                 </div>
             </div>
@@ -23,7 +27,7 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        You can join HIDRASEE by clicking the "Join Us" button on the top of the homepage, or just by simply clicking this <a href="">join now</a> text!
+                        You can join HIDRASEE by clicking the "Join Us" button on the top of the homepage, or just by simply clicking this <a href="{{ route('joinus') }}">join now</a> text!
                     </div>
                 </div>
             </div>
