@@ -51,7 +51,17 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="fas fa-cart-shopping"></i>
+                            @if($jumlah_order !== 0)
+                            <span class="badge bg-danger rounded-pill">{{ $jumlah_order }}</span>
+                            @endif
+                        </a>
+                    </li>
+
                     <!-- Authentication Links -->
+
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
