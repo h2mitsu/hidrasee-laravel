@@ -30,12 +30,12 @@
             <h2>
                 <strong>{{ $product->nama_produk }}</strong>
             </h2>
-            <h4>
+            <h4 class="fs-3">
                 Rp. {{ number_format($product->harga) }}
                 @if($product->is_ready == 1)
-                    <span class="ready"> <i class="fas fa-check"></i> Ready Stok</span>
+                    <span class="badge bg-success fs-5"> <i class="fas fa-check"></i> Ready Stok</span>
                 @else
-                    <span class="not-ready"> <i class="fas fa-times"></i> Stok Habis</span>
+                    <span class="badge bg-danger fs-5"> <i class="fas fa-times"></i> Stok Habis</span>
                 @endif
             </h4>
             <div class="row">
