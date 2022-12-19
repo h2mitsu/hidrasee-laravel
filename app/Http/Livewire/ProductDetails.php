@@ -63,7 +63,7 @@ class ProductDetails extends Component
             'total_harga' => $total_harga
         ]);
 
-        session()->flash('message', 'Produk berhasil ditambahkan ke keranjang');
+        session()->flash('message', 'Add to cart successful');
         return redirect()->back();
 
 
