@@ -59,7 +59,7 @@
                 </a>
             </div>
             <div class="col">
-                <a href="" class="text-decoration-none">
+                <a href="{{ route('history') }}" class="text-decoration-none">
                     <div class="card shadow card-fx">
                         <div class="card-body text-center">
                             <img src="assets/history.png" class="img-fluid pt-2 pb-2 mb-3">
