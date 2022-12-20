@@ -52,7 +52,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('cart') }}">
                             <i class="fas fa-cart-shopping"></i>
                             @if($jumlah_order !== 0)
                             <span class="badge bg-danger rounded-pill">{{ $jumlah_order }}</span>

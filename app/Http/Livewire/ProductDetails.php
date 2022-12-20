@@ -34,7 +34,7 @@ class ProductDetails extends Component
             return redirect()->route('login');
         }
 
-        $total_harga = ($this->jumlah_pesanan * $this->product->harga) + $this->product->ongkir;
+        $total_harga = $this->jumlah_pesanan * $this->product->harga;
 
         $order = Order::where('user_id', Auth::user()->id)->where('status', 0)->first();
 

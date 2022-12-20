@@ -20,7 +20,10 @@ class Navbar extends Component
             $order = Order::where('user_id', Auth::user()->id)->where('status', '0')->first();
             if ($order) {
                 $this->amount = OrderDetails::where('order_id', $order->id)->count(); //ngeset amount jadi total amount dari order details
+            }else {
+                $this->amount = 0;
             }
+
         }
     }
 
@@ -30,6 +33,8 @@ class Navbar extends Component
             $order = Order::where('user_id', Auth::user()->id)->where('status', '0')->first();
             if ($order) {
                 $this->amount = OrderDetails::where('order_id', $order->id)->count(); //ngeset amount jadi total amount dari order details
+            }else {
+                $this->amount = 0;
             }
         }
     }

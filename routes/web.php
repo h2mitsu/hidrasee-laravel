@@ -27,4 +27,6 @@ Route::livewire('/products/city/{kotaid}','products-city')->name('products.city'
 Route::livewire('/products/depot/{depotid}','products-depot')->name('products.depot');
 Route::livewire('/joinus','join-us')->name('joinus');
 Route::livewire('/find-depot','find-depots')->name('find.depot');
+Route::livewire('/cart','cart')->name('cart');
+Route::livewire('/checkout','checkout')->name('checkout');
 
