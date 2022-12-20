@@ -34,6 +34,11 @@ class ProductDetails extends Component
             return redirect()->route('login');
         }
 
+        if ($this->jumlah_pesanan > $this->product->stok) {
+            session()->flash('message2', 'Jumlah pesanan melebihi stok yang tersedia');
+            return;
+        }
+
         $total_harga = $this->jumlah_pesanan * $this->product->harga;
 
         $order = Order::where('user_id', Auth::user()->id)->where('status', 0)->first();

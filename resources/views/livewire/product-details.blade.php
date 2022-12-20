@@ -17,6 +17,10 @@
                 <div class="alert alert-success">
                     {{ session('message') }}
                 </div>
+            @elseif(session()->has('message2'))
+                <div class="alert alert-danger">
+                    {{ session('message2') }}
+                </div>
             @endif
         </div>
     </div>
