@@ -1,64 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# HIDRASEE - Water Depot Locator & Delivery App
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## About Laravel
+HIDRASEE is a full-stack web application built with Laravel that connects users with their nearest water depots. It features a location-based search system and an integrated ordering platform with multiple delivery options to ensure customers can easily meet their hydration needs.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### ## 📸 Screenshots
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![HIDRASEE Main Page]([home.png])
+![HIDRASEE Depot View]([screenshot.png])
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### ## ✨ Key Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The platform is designed with features for both customers and depot owners:
 
-## Laravel Sponsors
+#### For Customers:
+* 🗺️ **Find Nearest Depot:** Enter a location to see a list of the nearest and highest-rated water depots.
+* 🛒 **Direct Ordering:** Browse products from registered depots and place orders directly through the app.
+* 🚚 **Flexible Delivery:** Choose your preferred fulfillment method:
+    * **Depot Delivery:** Delivered by the depot's own service.
+    * **HIDRASEE Delivery:** Delivered by a dedicated HIDRASEE driver.
+    * **Self Pick-up:** Order ahead and pick it up yourself.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### For Depot Owners:
+* 🏪 **Manage Your Storefront:** Register your depot and create an account to sell products.
+* 📦 **Product Management:** Easily list and manage the products you have for sale.
+* 📋 **Order Fulfillment:** View and manage incoming customer orders.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### ## 🛠️ Technology Stack
 
-## Contributing
+* **Backend:** PHP, Laravel Framework
+* **Frontend:** HTML, CSS, JavaScript, Bootstrap
+* **Database:** [e.g., MySQL, PostgreSQL]
+* **Architecture:** MVC (Model-View-Controller)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+### ## 🚀 Installation & Setup
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+To run this project locally, follow these steps:
 
-## Security Vulnerabilities
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/hidrasee-laravel.git](https://github.com/your-username/hidrasee-laravel.git)
+    cd hidrasee-laravel
+    ```
+2.  **Install dependencies:**
+    ```bash
+    composer install
+    npm install
+    ```
+3.  **Setup your environment file:**
+    ```bash
+    cp .env.example .env
+    ```
+    *Then, open the `.env` file and configure your database credentials.*
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4.  **Generate application key:**
+    ```bash
+    php artisan key:generate
+    ```
+5.  **Run database migrations and seeders:**
+    ```bash
+    php artisan migrate --seed
+    ```
+6.  **Build frontend assets:**
+    ```bash
+    npm run dev
+    ```
+7.  **Serve the application:**
+    ```bash
+    php artisan serve
+    ```
+    The application will be running at `http://127.0.0.1:8000`.
