@@ -10,7 +10,7 @@ HIDRASEE is a full-stack web application built with Laravel that connects users 
 
 ### ## 📸 Screenshots
 
-![HIDRASEE Main Page]([home.png])
+![HIDRASEE Main Page](home.png)
 ![HIDRASEE Depot View]([screenshot.png])
 
 ---
